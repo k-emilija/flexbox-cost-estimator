@@ -77,3 +77,4 @@ h1 {
   z-index: 2;
   border-radius: 10px;
 }
+/* This style will always be linked to the 'active' class. This approach allows us to use JavaScript to add and remove the 'active' class from tabs, which in turn applies the desired styling to the active tab without causing any issues with the code.*/
