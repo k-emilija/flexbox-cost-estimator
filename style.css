@@ -127,11 +127,13 @@ h1 {
 
 /* SESSIONS SECTION */
 .sessions-card {
+  box-sizing: border-box;
+
   background-color: rgb(250, 247, 255);
   text-align: center;
   text-transform: uppercase;
 
-  width: 50%;
+  width: 60%;
   /* setting the width to be 50% of the container it's in */
   padding: 32px;
   margin: 32px 0 16px 0;
