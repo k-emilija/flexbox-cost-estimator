@@ -17,9 +17,12 @@ h1 {
 
 .container {
   background-color: white;
+
+  box-sizing: border-box;
   width: 100%;
   max-width: 900px;
   /* container have width of 100% and at 900px it stops growing */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,6 +158,7 @@ h1 {
 .slider {
   width: 100%;
   /* 100% of it's parent container */
+  margin-bottom: 32px;
 
   position: relative;
 }
@@ -226,6 +230,7 @@ h1 {
 .card-wrapper {
   display: flex;
 }
+
 .card {
   background-color: rgb(250, 247, 255);
   border-radius: 10px;
@@ -235,13 +240,20 @@ h1 {
   padding: 16px 32px;
 
   text-align: center;
-  text-transform: uppercase;
   font-weight: bold;
   color: rgb(83, 49, 156);
+
+  position: relative;
+  transition: 0.15s transform ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
 }
 
 .card .top-section {
   padding: 8px;
+  text-transform: uppercase;
 }
 
 .card .top-section p {
@@ -257,4 +269,44 @@ h1 {
   width: 30%;
   border: 1px solid rgb(210, 210, 210);
   border-radius: 2px;
+}
+
+/* button */
+.card button {
+  border: none;
+  color: white;
+  background-color: rgb(83, 49, 156);
+
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 8px 0;
+
+  transition: 0.15s transform ease;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* card-header */
+.card .save-header {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(53, 10, 74, 1) 36%,
+    rgba(83, 49, 156, 1) 100%
+  );
+
+  width: 100%;
+
+  /* card is the relative */
+  position: absolute;
+  top: -24px;
+  left: 0;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
