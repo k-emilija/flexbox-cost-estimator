@@ -134,7 +134,7 @@ h1 {
   width: 50%;
   /* setting the width to be 50% of the container it's in */
   padding: 32px;
-  margin: 32px 0;
+  margin: 32px 0 16px 0;
   border-radius: 10px;
 }
 
