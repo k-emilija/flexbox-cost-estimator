@@ -1,3 +1,4 @@
+/* BODY AND CONTAINER STYLES */
 body {
   background-color: rgb(233, 223, 255);
   font-family: "Open Sans", sans-serif;
@@ -29,6 +30,7 @@ h1 {
   position: relative;
 }
 
+/* TABS SECTION */
 .tabs {
   display: flex;
   width: 100%;
@@ -55,6 +57,7 @@ h1 {
   position: relative;
 }
 
+/* TABS UNDERLINE */
 .line {
   position: absolute;
   top: 98px;
@@ -79,6 +82,7 @@ h1 {
 }
 /* This style will always be linked to the 'active' class. This approach allows us to use JavaScript to add and remove the 'active' class from tabs, which in turn applies the desired styling to the active tab without causing any issues with the code.*/
 
+/* TOGGLE WITH IMAGES SECTION */
 .toggle-wrapper {
   display: flex;
 }
@@ -115,4 +119,34 @@ h1 {
   color: rgb(83, 49, 156);
   padding: 4px 16px;
   border-radius: 20px;
+}
+
+/* SESSIONS SECTION */
+.sessions-card {
+  background-color: rgb(250, 247, 255);
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 50%;
+  /* setting the width to be 50% of the container it's in */
+  padding: 32px;
+  margin: 16px 0;
+  border-radius: 10px;
+}
+
+.sessions-card p {
+  color: rgb(44, 44, 44);
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 16px 0 0 0;
+}
+.sessions-card .number {
+  color: rgb(83, 49, 156);
+  font-size: 54px;
+  margin: 0;
+}
+
+.description {
+  line-height: 32px;
+  margin: 16px 0 32px 0;
 }
