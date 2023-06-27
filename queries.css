@@ -33,6 +33,10 @@
     font-size: 14px;
   }
 
+  .tabs p {
+    padding: 6px;
+  }
+
   .sessions-card {
     width: 95%;
   }
