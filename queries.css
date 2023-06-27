@@ -37,6 +37,10 @@
     padding: 6px;
   }
 
+  .slider .scale ul {
+    font-size: 12px;
+  }
+
   .sessions-card {
     width: 95%;
   }
