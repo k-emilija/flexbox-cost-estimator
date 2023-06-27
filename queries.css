@@ -29,6 +29,10 @@
     margin: 0 0 32px 0;
   }
 
+  p {
+    font-size: 14px;
+  }
+
   .sessions-card {
     width: 95%;
   }
